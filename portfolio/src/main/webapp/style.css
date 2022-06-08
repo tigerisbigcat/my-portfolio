@@ -1,77 +1,9 @@
-body {
-  margin: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 #content {
-  margin-top: 0%;
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* width: 650px; */
-}
-
-#content img {
-  width: 250px;
-  border-radius: 50px;
-}
-
-h1#my-name {
-  text-align: left;
-  padding-left: 10%;
-  font-weight: bold;
-  font-size: 65px;
-  color: rgb(82, 110, 135);
-  font-family: Snell Roundhand, cursive;
-}
-p#desc {
-  text-align: left;
-  padding-left: 10%;
-  font-weight: bold;
-  font-size: 20px;
-  color: rgb(82, 110, 135);
-}
-
-#home {
-  background: url(images/background.jpg) no-repeat;
-  background-position: 0 0;
-  padding: 20% 0;
-  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  width: 650px;
 }
 
 #greeting-container {
   margin-top: 20px;
-}
-
-#menu {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  background-color: #ecebeb;
-}
-
-#menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-#menu li{
-  float: left;
-  font-weight: bold;
-  font-size: large;
-}
-
-#menu li a {
-  display: block;
-  text-align: center;
-  color: rgb(82, 110, 135);
-  padding: 20px;
-}
-
-#menu li a:hover {
-  background-color: rgb(188, 217, 243);
 }
