@@ -100,7 +100,7 @@ p#desc {
 }
 
 /* about me page settings */ 
-#about_page {
+#about {
   background: white no-repeat;
   padding: 4.5% 0;
   background-size: cover;
@@ -115,7 +115,7 @@ img#learning {
 }
 
 /* education page settings */ 
-#education_page {
+#education {
   background: rgb(236, 241, 245) no-repeat;
   padding: 4.5% 0;
   background-size: cover;
