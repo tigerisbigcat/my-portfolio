@@ -5,12 +5,11 @@ body {
 
 /* menu settings */
 #menu {
-  padding-top: 0.8%;
+  padding: 0.7%;
   position: fixed;
   text-align: center;
   width: 50%;
   background-color: white;
-  height: 50px;
   padding-inline-start: 30%;
   padding-inline-end: 30%;
   border: 1px solid #ecebeb;
@@ -48,6 +47,8 @@ body {
   font-size: 80%;
   font-family: Candara;
   letter-spacing: 2px;
+
+  text-decoration: none;
 }
 
 #menu li a:hover {
@@ -102,26 +103,51 @@ p#desc {
 /* about me page settings */ 
 #about {
   background: white no-repeat;
-  padding: 4.5% 0;
+  padding: 6% 0;
   background-size: cover;
 }
 
 img#learning {
   float: right;
-  margin-left: 4%;
-  padding-top: 4%;
+  margin-left: 4%; /* space between img and text */
+  padding-top: 3.2%;
   padding-right: 12%;
-  width: 350px;
+  width: 25%;
+  padding-bottom: 20%;
 }
 
 /* education page settings */ 
 #education {
   background: rgb(236, 241, 245) no-repeat;
-  padding: 4.5% 0;
+  padding: 6% 0;
   background-size: cover;
+  padding-bottom: 33.5%;
 }
 
+#education img {
+  float: left;
+  padding-left: 12%;
+  margin-right: 4%;  /* space between img and text */
+  width: 10%;
+}
 
+p#deanza {
+  float: left;
+  padding: 0.5%;
+  padding-right: 40%;
+}
+
+p#berkeley {
+  float: left;
+  padding: 0.5%;
+  padding-right: 35%;
+}
+
+p#course {
+  float: left;
+  padding-left: 26.5%;
+  padding-right: 20%;
+}
 
 #greeting-container {
   margin-top: 20px;
