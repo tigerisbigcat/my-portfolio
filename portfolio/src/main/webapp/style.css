@@ -30,7 +30,7 @@ body {
   width: 100%;
 }
 
-#menu li{
+#menu li {
   /* display: inline-block; */
   box-sizing: border-box;
   float: left;
@@ -52,7 +52,8 @@ body {
 }
 
 #menu li a:hover {
-  background-color: rgb(188, 217, 243);
+  color: rgb(151, 117, 237);
+  /* background-color: rgb(188, 217, 243); */
 }
 
 /* general content block settings */
@@ -62,6 +63,7 @@ body {
   margin-right: auto; */
   /* width: 650px; */
 }
+
 h2 {
   font-size: 55px;
   text-align: left;
@@ -89,6 +91,7 @@ h1#my-name {
   color: rgb(82, 110, 135);
   font-family: MS PGothic;
 }
+
 p#desc {
   text-align: left;
   padding-left: 10%;
@@ -100,7 +103,7 @@ p#desc {
   color: rgb(82, 110, 135);
 }
 
-/* about me page settings */ 
+/* about me page settings */
 #about {
   background: white no-repeat;
   padding: 6% 0;
@@ -109,25 +112,27 @@ p#desc {
 
 img#learning {
   float: right;
-  margin-left: 4%; /* space between img and text */
+  margin-left: 4%;
+  /* space between img and text */
   padding-top: 3.2%;
   padding-right: 12%;
   width: 25%;
   padding-bottom: 20%;
 }
 
-/* education page settings */ 
+/* education page settings */
 #education {
   background: rgb(236, 241, 245) no-repeat;
   padding: 6% 0;
   background-size: cover;
-  padding-bottom: 33.5%;
+  padding-bottom: 34%;
 }
 
 #education img {
   float: left;
   padding-left: 12%;
-  margin-right: 4%;  /* space between img and text */
+  margin-right: 4%;
+  /* space between img and text */
   width: 10%;
 }
 
@@ -148,6 +153,65 @@ p#course {
   padding-left: 26.5%;
   padding-right: 20%;
 }
+
+/* experience page settings */
+#experience {
+  background: white no-repeat;
+  padding: 6% 0;
+  background-size: cover;
+  padding-bottom: 24%;
+}
+
+.flex_container h3, .flex_container h4 {
+  text-align: right;
+}
+
+.inside_container_right h3, .inside_container_right h4 {
+  text-align: left;
+}
+
+.flex_container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* padding-left: 80px; */
+}
+
+.flex_container > div {
+  padding: 3%;
+  width: 120%;
+  height: 100%;
+  padding-right: 7%;
+}
+
+.flex_container > div p {
+  padding-left: 0;
+  /* color: blue; */
+}
+
+.flex_container > div#one {
+  border-right: solid rgb(106, 136, 192) 4px;
+}
+
+.flex_container > div#one p {
+  text-align: right;
+  /* color: rgb(164, 214, 226); */
+}
+
+.inside_container_left > div {
+  /* height: 40%; */
+  width: 110%;
+  /* background-color: rgb(205, 235, 225); */
+}
+
+.inside_container_right > div {
+  position:relative;
+  top: 100px;
+  width: 120%;
+  /* background-color: rgb(227, 217, 250); */
+}
+
+
 
 #greeting-container {
   margin-top: 20px;
