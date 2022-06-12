@@ -81,6 +81,7 @@ p {
   background-position: 0 0;
   padding: 18% 0;
   background-size: cover;
+  /* position: relative; */
 }
 
 h1#my-name {
@@ -159,22 +160,34 @@ p#course {
   background: white no-repeat;
   padding: 6% 0;
   background-size: cover;
-  padding-bottom: 24%;
 }
+
+/* #experience {
+  background: url(images/experience_background.jpg) no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+} */
 
 .flex_container h3, .flex_container h4 {
   text-align: right;
 }
 
+/* .flex_container h3 {
+  padding-right: 15%;
+} */
+
 .inside_container_right h3, .inside_container_right h4 {
   text-align: left;
 }
+
+/* .inside_container_right h3 {
+  padding-left: 13%;
+} */
 
 .flex_container {
   display: flex;
   width: 100%;
   justify-content: center;
-  /* padding-left: 80px; */
 }
 
 .flex_container > div {
@@ -186,16 +199,14 @@ p#course {
 
 .flex_container > div p {
   padding-left: 0;
-  /* color: blue; */
 }
 
 .flex_container > div#one {
   border-right: solid rgb(106, 136, 192) 4px;
-}
+} 
 
 .flex_container > div#one p {
   text-align: right;
-  /* color: rgb(164, 214, 226); */
 }
 
 .inside_container_left > div {
@@ -205,12 +216,73 @@ p#course {
 }
 
 .inside_container_right > div {
-  position:relative;
+  padding-top: 15%;
   top: 100px;
   width: 120%;
   /* background-color: rgb(227, 217, 250); */
 }
 
+/*
+.dot_and_line {
+  /* display: flex; */ /*
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.dot {
+  margin-left: 2650%;
+  margin-top: -120%;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+}
+
+.dot2 {
+  width: 20px;
+  height: 20px;
+  background-color: #e788ff;
+  margin-top: -95%;
+  margin-left: 2700%;
+}
+
+.dot1 {
+  width: 25px;
+  height: 25px;
+  background-color: #b5bbc6;
+}
+*/
+
+.dot_left {
+  display: flex;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(181, 132, 223);
+
+  margin-left: 105.5%;
+  margin-top: -6%;
+}
+
+.dot_right {
+  display: flex;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(222, 197, 8);
+
+  margin-left: -8%;
+  margin-top: -6%;
+}
+
+
+/* projects page settings */
+#projects {
+  background: white no-repeat;
+  padding: 6% 0;
+  background-size: cover;
+}
 
 
 #greeting-container {
