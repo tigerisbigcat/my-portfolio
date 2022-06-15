@@ -379,6 +379,10 @@ div #enjoy {
   padding-left: 12%;
 }
 
+div #enjoy img {
+  width: 89%;
+}
+
 p#copyright {
   font-size: 13px;
 }
