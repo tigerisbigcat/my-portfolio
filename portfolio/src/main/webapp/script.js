@@ -30,9 +30,25 @@ function addRandomGreeting() {
 /** Fetches the current date from the server and adds it to the page. */
 async function showServerTime() {
     const responseFromServer = await fetch('/date');
-    const textFromResponse = await responseFromServer.text();
-    textFromResponse += "  You are on my sever :)"
+    const textFromResponse = await responseFromServer.text() + "  You are on my sever :)";
   
     const dateContainer = document.getElementById('date-container');
     dateContainer.innerText = textFromResponse;
   }
+
+async function jsonFile() {
+    // Send a request to /my-data-url.
+    const responseFromServer = await fetch('/form-handler');
+
+    // Parse the response as JSON.
+    // const myObject = await responseFromServer.text() + "test";
+    const textFromResponse = await responseFromServer.text() + "test";
+
+    const dateContainer = document.getElementById('date-container-json');
+    dateContainer.innerText = textFromResponse;
+
+    // // Now we can reference the fields in myObject!
+    // console.log(myObject.x);
+    // console.log(myObject.y);
+    // console.log(myObject.z);
+}
