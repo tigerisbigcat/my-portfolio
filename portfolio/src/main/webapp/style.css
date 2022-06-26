@@ -216,39 +216,9 @@ p#course {
   /* background-color: rgb(227, 217, 250); */
 }
 
-/*
-.dot_and_line {
-  /* display: flex; */ /*
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-}
-
-.dot {
-  margin-left: 2650%;
-  margin-top: -120%;
-  border-radius: 50%;
-  mix-blend-mode: multiply;
-}
-
-.dot2 {
-  width: 20px;
-  height: 20px;
-  background-color: #e788ff;
-  margin-top: -95%;
-  margin-left: 2700%;
-}
-
-.dot1 {
-  width: 25px;
-  height: 25px;
-  background-color: #b5bbc6;
-}
-*/
-
 .dot_left {
   display: flex;
-
+/* use z-index(google it) to make 2 dots */
   width: 20px;
   height: 20px;
   border-radius: 50%;

@@ -27,6 +27,8 @@ function addRandomGreeting() {
   greetingContainer.innerText = greeting;
 }
 
+
+// I will work on this button later, so I need to keep these code.
 /** Fetches the current date from the server and adds it to the page. */
 async function showServerTime() {
     const responseFromServer = await fetch('/date');
@@ -42,13 +44,8 @@ async function jsonFile() {
 
     // Parse the response as JSON.
     // const myObject = await responseFromServer.text() + "test";
-    const textFromResponse = await responseFromServer.text() + "test";
+    const textFromResponse = await responseFromServer.text();
 
     const dateContainer = document.getElementById('date-container-json');
     dateContainer.innerText = textFromResponse;
-
-    // // Now we can reference the fields in myObject!
-    // console.log(myObject.x);
-    // console.log(myObject.y);
-    // console.log(myObject.z);
 }
