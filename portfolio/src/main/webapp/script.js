@@ -17,7 +17,7 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+      ['Hello friends!', '¡Hola Amigas!', '你好，朋友！', 'Bonjour Copains!'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
@@ -25,4 +25,27 @@ function addRandomGreeting() {
   // Add it to the page.
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
+}
+
+
+// I will work on this button later, so I need to keep these code.
+/** Fetches the current date from the server and adds it to the page. */
+async function showServerTime() {
+    const responseFromServer = await fetch('/date');
+    const textFromResponse = await responseFromServer.text() + "  You are on my sever :)";
+  
+    const dateContainer = document.getElementById('date-container');
+    dateContainer.innerText = textFromResponse;
+  }
+
+async function jsonFile() {
+    // Send a request to /my-data-url.
+    const responseFromServer = await fetch('/form-handler');
+
+    // Parse the response as JSON.
+    // const myObject = await responseFromServer.text() + "test";
+    const textFromResponse = await responseFromServer.text();
+
+    const dateContainer = document.getElementById('date-container-json');
+    dateContainer.innerText = textFromResponse;
 }
