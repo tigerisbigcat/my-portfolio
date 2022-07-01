@@ -32,30 +32,35 @@ import javax.servlet.http.HttpServletResponse;
 
 /** Servlet responsible for listing tasks. */
 @WebServlet("/list-tasks")
-public class ListTasksServlet extends HttpServlet {
+public class ListContactServlet extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
     Query<Entity> query =
-        Query.newEntityQueryBuilder().setKind("Task").setOrderBy(OrderBy.desc("timestamp")).build();
+        Query.newEntityQueryBuilder().setKind("Contact").setOrderBy(OrderBy.desc("timestamp")).build();
     QueryResults<Entity> results = datastore.run(query);
 
-    List<Task> tasks = new ArrayList<>();
+    response.setContentType("text/html");
+    response.getWriter().println("<html>");
+    response.getWriter().println("<head><title>Message</title></head>");
+    response.getWriter().println("<body>");
+
     while (results.hasNext()) {
       Entity entity = results.next();
+      String name = entity.getString("name");
+      String email = entity.getString("email");
+      String phone = entity.getString("phone");
+      String message = entity.getString("message");
 
-      long id = entity.getKey().getId();
-      String title = entity.getString("title");
-      long timestamp = entity.getLong("timestamp");
-
-      Task task = new Task(id, title, timestamp);
-      tasks.add(task);
+      response.getWriter().println("<h3>Form: " + name + "</h3>");
+      response.getWriter().println("<p>Email: " + email + "</p>");
+      response.getWriter().println("<p>phone: " + phone + "</p>");
+      response.getWriter().println("<h3>Message:</h3>");
+      response.getWriter().println("<p>: " + message + "</p>");
     }
-
-    Gson gson = new Gson();
-
-    response.setContentType("application/json;");
-    response.getWriter().println(gson.toJson(tasks));
+    
+    response.getWriter().println("</body>");
+    response.getWriter().println("</html>");
   }
 }
