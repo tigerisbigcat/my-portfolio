@@ -43,7 +43,7 @@ public class FormHandlerServlet extends HttpServlet {
     String nameValue = Jsoup.clean(request.getParameter("name"), Safelist.basic());
     String emailValue = Jsoup.clean(request.getParameter("email"), Safelist.basic());
     String phoneValue = Jsoup.clean(request.getParameter("phone"), Safelist.basic());
-    String messageValue = Jsoup.clean(request.getParameter("message"), Safelist.basic());
+    String messageValue = Jsoup.clean(request.getParameter("messageInput"), Safelist.basic());
     long timestamp = System.currentTimeMillis();
 
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
